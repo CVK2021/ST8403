@@ -1,6 +1,6 @@
 
 <body class="home page-template page-template-front-page page-template-front-page-php page">
-<div id="webchat-app-bot">
+<div class="ready" id="webchat-app-bot">
 <script>
 (function (window, document) {
 var createBot = function () {
