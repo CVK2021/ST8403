@@ -19,15 +19,8 @@ script.charset = "utf-8";
 document.head.appendChild(link);
 document.head.appendChild(script);
 };
-window.addEventListener ? window.addEventListener("load", loadChat, false) : window.attachEvent("onload", loadChat);
+window.addEventListener ? window.addEventListener("load", loadChat, true) : window.attachEvent("onload", loadChat);
 })(window, document);
-</script>
-  <script type="text/javascript">
-  jQuery(document).ready(function(){
-    setTimeout(function(){
-  jQuery("#webchat-app-bot").trigger("click");
-    },3);
-  });
 </script>
 </div>
 </body>
