@@ -21,6 +21,9 @@ document.head.appendChild(script);
 };
 window.addEventListener ? window.addEventListener("load", loadChat, false) : window.attachEvent("onload", loadChat);
 })(window, document);
+  window.onload=function(){
+  document.getElementById("webchat-app-bot").click();
+};
 </script>
 </div>
 </body>
