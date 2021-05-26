@@ -19,7 +19,7 @@ script.charset = "utf-8";
 document.head.appendChild(link);
 document.head.appendChild(script);
 };
-window.addEventListener ? window.addEventListener("load", loadChat, true) : window.attachEvent("onload", loadChat);
+window.addEventListener ? window.addEventListener("load", loadChat, false) : window.attachEvent("onload", loadChat);
 })(window, document);
 </script>
 </div>
