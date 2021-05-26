@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/CVK2021/ST8403/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CVK2021/ST8403/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<body class="home page-template page-template-front-page page-template-front-page-php page">
+<div id="webchat-app-bot">
+<script>
+(function (window, document) {
+var createBot = function () {
+var params = {
+};
+BotChat.Intro({ onRequestLive: function () { window.location = "mailto:st@sadalestikls.lv" } }, document.getElementById("webchat-app-bot"));
+};
+var loadChat = function () {
+var script = document.createElement("script"),
+link = document.createElement("link");
+script.src = "https://st-va.azurewebsites.net/botchat.min.js";
+link.href = "https://st-va.azurewebsites.net/botchat.min.css";
+link.rel = "stylesheet";
+script.onload = createBot;
+script.charset = "utf-8";
+document.head.appendChild(link);
+document.head.appendChild(script);
+};
+window.addEventListener ? window.addEventListener("load", loadChat, false) : window.attachEvent("onload", loadChat);
+})(window, document);
+</script>
+</div>
+</body>
